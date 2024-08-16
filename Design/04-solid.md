@@ -6,6 +6,11 @@ Example Diagrams
 
 ```mermaid
 classDiagram
+class IStartable {
+    <<interface>>
+	+Start() void
+	+Stop() void
+}
 Tent --> Shelter : implements
 class S1
 class EC1
@@ -23,6 +28,7 @@ class Car {
     +Start() void
     +Stop() void
 }
+Car --|> IStartable : implements
 Car --|> Shelter : implements
 Car --> BrakePedal
 Car --> EngineControlModule

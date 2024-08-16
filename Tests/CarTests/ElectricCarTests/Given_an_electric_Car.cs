@@ -11,6 +11,6 @@ public class Given_an_electric_Car
     [SetUp]
     public void SetUp()
     {
-    SUT = new Car(new ElectricControlModule()); ;
+        SUT = new Car(new ElectricControlModule()); ;
     }
 }

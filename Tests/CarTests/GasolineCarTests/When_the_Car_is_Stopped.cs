@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Demo;
+using NUnit.Framework;
 
 namespace Tests.CarTests.GasolineCarTests;
 
@@ -11,7 +12,8 @@ public class When_the_Car_is_Stopped : Given_a_gasoline_Car
     public void SetUp()
     {
         base.SetUp();
-        SUT.Stop();
+        var startable = (IStartable)SUT;
+        startable.Stop();
         _result = SUT.IsRunning;
     }
 

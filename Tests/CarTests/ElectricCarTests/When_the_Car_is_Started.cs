@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Demo;
+using NUnit.Framework;
 
 namespace Tests.CarTests.ElectricCarTests;
 
@@ -11,7 +12,8 @@ public class When_the_Car_is_Started : Given_an_electric_Car
     public void SetUp()
     {
         base.SetUp();
-        SUT.Start();
+        var startable = (IStartable)SUT;
+        startable.Start();
         _result = SUT.IsRunning;
     }
 

@@ -1,5 +1,5 @@
 ﻿namespace Demo;
-public class Car
+public class Car : IStartable
 {
   public Car(EngineControlModule engineControlModule)
   {
