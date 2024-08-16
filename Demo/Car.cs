@@ -1,26 +1,31 @@
 ﻿namespace Demo;
-public abstract class Car
+public class Car
 {
+  public Car(EngineControlModule engineControlModule)
+  {
+    EngineControlModule = engineControlModule;
+  }
+  public string Make { get; set; }
+  public string Model { get; set; }
   protected EngineControlModule EngineControlModule { get; init; }
-  public BrakePedal BrakePedal { get; set; } = new BrakePedal();
-
   public bool IsRunning => EngineControlModule.IsRunning;
-
-    public string Make { get; set; }
-    public string Model { get; set; }
-
-
-  public Throttle Throttle { get; set; } = new Throttle();
-
+  
+  public BrakePedal BrakePedal { get; set; }
+  
   public SteeringWheel SteeringWheel { get; set; } = new SteeringWheel();
+  public Throttle Throttle { get; set; } = new Throttle();
+  public void Start()
+  {
+      EngineControlModule.Start();
+  }
+  public void Stop()
+  {
+      EngineControlModule.Stop();
+  }
 
-    public void Start()
-    {
-        EngineControlModule.Start();
-    }
 
-    public void Stop()
-    {
-        EngineControlModule.Stop();
-    }
+
+
+
+
 }
