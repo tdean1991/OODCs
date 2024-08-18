@@ -1,3 +1,3 @@
-﻿namespace Demo;
+﻿namespace Demo.CarWorld;
 
 public class AirTemperatureSensor { }
