@@ -13,7 +13,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design", "Design", "{07CA7D
 	ProjectSection(SolutionItems) = preProject
 		Design\03-pillars.md = Design\03-pillars.md
 		Design\04-solid.md = Design\04-solid.md
-		05-DesignPatterns.md = 05-DesignPatterns.md
+		Design\05-DesignPatterns.md = Design\05-DesignPatterns.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{577F0325-F619-4A8D-8783-A330E22FE31D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
 Global

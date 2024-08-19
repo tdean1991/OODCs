@@ -10,7 +10,7 @@ public class Given_a_gasoline_Car
     protected Car SUT { get; set; }
 
     [SetUp]
-    public void SetUp()
+    public virtual void SetUp()
     {
     SUT = new Car(new ICEngineControlModule()); ;
     }

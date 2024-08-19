@@ -9,7 +9,7 @@ public class When_the_Car_is_Started : Given_a_gasoline_Car
     private bool _result;
 
     [SetUp]
-    public void SetUp()
+    public override void SetUp()
     {
         base.SetUp();
         var startable = (IStartable)SUT;

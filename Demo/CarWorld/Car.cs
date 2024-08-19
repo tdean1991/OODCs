@@ -5,12 +5,12 @@ public class Car : IStartable
     {
         EngineControlModule = engineControlModule;
     }
-    public string Make { get; set; }
-    public string Model { get; set; }
+    public string? Make { get; set; }
+    public string? Model { get; set; }
     protected EngineControlModule EngineControlModule { get; init; }
     public bool IsRunning => EngineControlModule.IsRunning;
 
-    public BrakePedal BrakePedal { get; set; }
+    public BrakePedal? BrakePedal { get; set; }
 
     public SteeringWheel SteeringWheel { get; set; } = new SteeringWheel();
     public Throttle Throttle { get; set; } = new Throttle();

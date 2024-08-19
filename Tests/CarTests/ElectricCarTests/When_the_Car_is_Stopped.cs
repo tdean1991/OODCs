@@ -10,7 +10,7 @@ public class When_the_Car_is_Stopped : Given_an_electric_Car
     private bool _result;
 
     [SetUp]
-    public void SetUp()
+    public override void SetUp()
     {
         base.SetUp();
         var startable = (IStartable)SUT;
